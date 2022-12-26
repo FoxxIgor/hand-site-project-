@@ -1,0 +1,44 @@
+body{
+    font-family: 'IBM Plex Serif', serif;   
+    text-align: center;
+}
+h1{
+    font-size: 50px;
+    background-color: rgb(22, 27, 71);
+    border: 5px solid rgb(10, 13, 34);
+    border-radius: 10px;
+    width: 350px;
+    color: white;
+}
+b{
+    font-size: 20px;
+}
+#listaP{
+    font-size: 20px;
+}
+.webcamDivs{
+    border: 5px solid rgb(10, 13, 34);
+    width: 350px;
+    height: 300px;
+    margin: 30px;
+}
+.buttons{
+    background-color: rgb(33, 41, 116);
+    border: 5px solid rgb(10, 13, 34);
+    margin-bottom: 20px;
+    width: 200px;
+    height: 100px;
+    font-family: 'IBM Plex Serif', serif;   
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+}
+.mainContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(22, 27, 71);
+    border: 5px solid rgb(10, 13, 34);
+    border-radius: 10px;
+    color: white;
+}

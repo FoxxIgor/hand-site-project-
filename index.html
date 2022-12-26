@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Site de Mãos</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <center>
+                <h1>
+                    Site de Mãos<br>
+                    <span class="emojisHand">&#9995;</span>
+                    <span class="emojisHand">&#9996;</span>
+                    <span class="emojisHand">&#128077;</span>
+                    <span class="emojisHand">&#128078;</span>
+                </h1>
+                <p id="listaP">
+                    Tire uma foto da sua mão fazendo um gesto, o modelo foi treinado com os gestos:<br>
+                    <b>
+                        Mão normal<br>
+                        Mão com joinha para cima<br>
+                        Mão com joinha para baixo
+                    </b> 
+                </p>
+                <div class="mainContent">
+                        <div>
+                            <h3> Camera:</h3>
+                            <div id="camera" class="webcamDivs"></div>
+                            <button onclick="takeSnapshot()" class="buttons"> Capturar Foto</button>
+                        </div>
+                        <div>
+                            
+                            <h3> Previsão 1:</h3>
+                            <h3 id="response1"></h3><span id="emoji1"></span>
+                            <br>
+                            <h3> Previsão 2:</h3>
+                            <h3 id="response2"></h3><span id="emoji2"></span>
+                            
+                        </div>
+                        <div>
+                            <h3> Foto:</h3>
+                            <div id="photoDiv" class="webcamDivs"></div>
+                            <button onclick="check()" class="buttons"> Ver Simbolo</button>
+                        </div>
+                    
+                </div>
+            </center>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
